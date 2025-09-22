@@ -1,3 +1,5 @@
+import SampleDataButton from './SampleDataButton'
+
 const Header = () => {
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-4">
@@ -36,6 +38,8 @@ const Header = () => {
             />
           </div>
         </div>
+
+        {/* <SampleDataButton /> */}
 
         {/* Right Side Icons */}
         <div className="flex items-center gap-4">

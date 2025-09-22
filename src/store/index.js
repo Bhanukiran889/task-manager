@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import tasksReducer from "./tacksSice";
+import tasksReducer from "./tasksSlice";
 
 const LOCAL_KEY = "creative-upaay-dashboard-v1";
 
