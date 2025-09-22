@@ -102,10 +102,10 @@ const TaskCard = ({ task, index, columnId, isDragEnabled = true }) => {
             {/* User Avatars */}
             <div className="flex -space-x-1">
               <div className="w-6 h-6 bg-blue-400 rounded-full border-2 border-white flex items-center justify-center">
-                <span className="text-white text-xs font-medium">A</span>
+                <img className="rounded-4xl" src="/profile2.png" />
               </div>
               <div className="w-6 h-6 bg-green-400 rounded-full border-2 border-white flex items-center justify-center">
-                <span className="text-white text-xs font-medium">B</span>
+                <img className="rounded-4xl" src="/profile4.png" />
               </div>
             </div>
 

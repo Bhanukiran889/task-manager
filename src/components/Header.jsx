@@ -1,4 +1,3 @@
-import SampleDataButton from './SampleDataButton'
 
 const Header = () => {
   return (
@@ -39,7 +38,6 @@ const Header = () => {
           </div>
         </div>
 
-        <SampleDataButton />
 
         {/* Right Side Icons */}
         <div className="flex items-center gap-4">

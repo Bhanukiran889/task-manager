@@ -71,7 +71,7 @@ const SampleDataButton = () => {
   return (
     <button
       onClick={addSampleData}
-      className="bg-purple-400 text-black px-4 py-2 rounded-lg hover:bg-purple-300 transition-color"
+      className="bg-purple-400 text-xs text-black px-4 py-2 rounded-lg hover:bg-purple-300 transition-color"
     >
       Add Sample Data
     </button>

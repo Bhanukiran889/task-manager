@@ -8,6 +8,7 @@ import {
 } from "../store/tasksSlice";
 import Column from "./Column";
 import Profiles from "./Profiles";
+import SampleDataButton from "./SampleDataButton";
 
 const Board = () => {
   const dispatch = useDispatch();
@@ -283,6 +284,8 @@ const Board = () => {
             </div>
 
             <div className="flex items-center gap-4">
+            <SampleDataButton />
+
               <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
                 <svg
                   width="16"
