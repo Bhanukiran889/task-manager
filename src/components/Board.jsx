@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { DragDropContext } from "react-beautiful-dnd";
+import { DragDropContext } from "@hello-pangea/dnd";
 import { useDispatch, useSelector } from "react-redux";
 import {
   moveTask,
