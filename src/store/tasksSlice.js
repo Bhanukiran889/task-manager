@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
   columns: {
@@ -27,11 +27,24 @@ const tasksSlice = createSlice({
       if (!state.columns.done) {
         state.columns.done = { id: "done", name: "Done", items: [] };
       }
+
+      // Deduplicate any existing task ids across all columns (handles previously duplicated Date.now ids)
+      const seenIds = new Set();
+      const columnsList = [state.columns.todo, state.columns.inprogress, state.columns.done];
+      columnsList.forEach((col) => {
+        if (!col || !Array.isArray(col.items)) return;
+        col.items.forEach((task) => {
+          if (!task.id || seenIds.has(task.id)) {
+            task.id = nanoid();
+          }
+          seenIds.add(task.id);
+        });
+      });
     },
     addTask(state, action) {
       const { columnId, title, description, priority = "low" } = action.payload;
       const newTask = {
-        id: Date.now().toString(),
+        id: nanoid(),
         title,
         description,
         priority,
