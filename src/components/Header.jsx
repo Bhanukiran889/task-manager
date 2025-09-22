@@ -181,7 +181,7 @@ const Header = () => {
             </div>
             <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
               <img
-                src="/src/assets/profile.png"
+                src="/profile.png"
                 alt="profile"
                 className="w-8 h-8 rounded-full"
               />{" "}
