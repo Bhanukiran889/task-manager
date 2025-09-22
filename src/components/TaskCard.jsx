@@ -82,10 +82,10 @@ const TaskCard = ({ task, index, columnId, isDragEnabled = true }) => {
           <div className="flex justify-between items-center">
             {/* User Avatars */}
             <div className="flex -space-x-1">
-              <div className="w-6 h-6 bg-blue-500 rounded-full border-2 border-white flex items-center justify-center">
+              <div className="w-6 h-6 bg-blue-400 rounded-full border-2 border-white flex items-center justify-center">
                 <span className="text-white text-xs font-medium">A</span>
               </div>
-              <div className="w-6 h-6 bg-green-500 rounded-full border-2 border-white flex items-center justify-center">
+              <div className="w-6 h-6 bg-green-400 rounded-full border-2 border-white flex items-center justify-center">
                 <span className="text-white text-xs font-medium">B</span>
               </div>
             </div>

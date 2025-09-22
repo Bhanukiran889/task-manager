@@ -1,6 +1,7 @@
 import React from 'react'
 import { Droppable } from 'react-beautiful-dnd'
 import TaskCard from './TaskCard'
+import AddTaskForm from './AddTaskForm'
 
 const Column = ({ column, isDragEnabled = true }) => {
   // Safety check: Ensure column has required properties
@@ -53,9 +54,9 @@ const Column = ({ column, isDragEnabled = true }) => {
 
   return (
     <div className="flex-1 min-w-0">
-      <div className={`rounded-lg border-2 bg-gray-100 border-gray-200 min-h-96 h-full`}>
+      <div className={`rounded-4xl border-2 bg-gray-100 border-gray-100 min-h-96 h-full`}>
         {/* Column Header */}
-        <div className="p-4 rounded-t-lg bg- bg-gray-100 border-b border-gray-200">
+        <div className="p-4 rounded-4xl bg-gray-10">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className={`w-2 h-2 rounded-full bg ${getDotColor(column.id)}`}></div>
@@ -66,7 +67,7 @@ const Column = ({ column, isDragEnabled = true }) => {
             </div>
             {column.id === 'todo' && (
               <button className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">
-                <span className="text-gray-600 text-sm">+</span>
+                <AddTaskForm />
               </button>
             )}
           </div>
