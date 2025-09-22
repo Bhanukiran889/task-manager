@@ -39,7 +39,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* <SampleDataButton /> */}
+        <SampleDataButton />
 
         {/* Right Side Icons */}
         <div className="flex items-center gap-4">

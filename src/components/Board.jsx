@@ -177,7 +177,7 @@ const Board = () => {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <button className="flex items-center gap-2 px-4 py-2 bg-white text-purple-600 rounded-lg hover:bg-purple-700">
+              <button className="flex items-center gap-2 px-4 py-2 bg-white text-purple-600 rounded-lg hover:bg-purple-100">
                 <svg
                   width="18"
                   height="18"
