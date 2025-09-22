@@ -31,11 +31,11 @@ The state is persisted in **localStorage**, so tasks remain intact even after a 
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/your-username/task-dashboard.git
+   git clone https://github.com/Bhanukiran889/task-manager.git
    cd task-dashboard
 ```
 
